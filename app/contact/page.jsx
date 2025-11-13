@@ -1,26 +1,29 @@
-"use client";
+'use client'
+import React, { useState } from 'react'
 
-import React from "react";
-import Agenda from "../../Components/Agenda";
+import Agenda from '../../Components/Agenda'
 
 const contact = () => {
-  let numeroDiAppuntamenti = 3;
+  const [numeroDiAppuntamenti, setNumeroDiAppuntamenti] = useState(0)
 
   function prenotaClicked() {
-    numeroDiAppuntamenti = numeroDiAppuntamenti + 1;
+    setNumeroDiAppuntamenti((prev) => prev + 1)
 
-    console.log("nuova prenotazione, appuntamenti:", numeroDiAppuntamenti);
+    console.log('nuova prenotazione, appuntamenti:', numeroDiAppuntamenti)
   }
 
   return (
     <div>
       <h1>contact</h1>
-      <button onClick={prenotaClicked} className="border border-amber-700 p-2 m-2 bg-gray-700">
+      <button
+        onClick={prenotaClicked}
+        className="border border-amber-700 p-2 m-2 bg-gray-700"
+      >
         Prenota
       </button>
       <Agenda n={numeroDiAppuntamenti} />
     </div>
-  );
-};
+  )
+}
 
-export default contact;
+export default contact
