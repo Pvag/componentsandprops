@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-const bio = () => {
-  return <div>bio</div>;
-};
+const Bio = () => {
+  return <div>bio</div>
+}
 
-export default bio;
+export default Bio

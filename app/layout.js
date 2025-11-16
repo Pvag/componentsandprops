@@ -27,7 +27,7 @@ function NavigationBar() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-blue-600 text-white m-4">
+      <body className="bg-blue-500 text-white m-4">
         <NavigationBar />
         <div className="mt-2">{children}</div>
       </body>

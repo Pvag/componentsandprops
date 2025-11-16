@@ -1,4 +1,7 @@
-import React from "react";
+import React from 'react'
+
+import Logo from './Logo'
+import Footer from './Footer'
 
 const Agenda = (props) => {
   // TODO
@@ -8,14 +11,16 @@ const Agenda = (props) => {
   //
   // Entrambe le components vanno definite in file separati
   // e renderizzate qui, in Agenda.
-  const { n } = props;
+  const { n } = props
 
   return (
     <div>
+      <Logo />
       <h1>La mia Agenda</h1>
       <div>{`Oggi ho ${n} appuntamenti`}</div>
+      <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Agenda;
+export default Agenda
